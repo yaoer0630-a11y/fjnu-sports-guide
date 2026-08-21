@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" role="img" aria-labelledby="comicTitle comicDesc">
+  <title id="comicTitle">校园体育信息四格小漫画</title>
+  <desc id="comicDesc">四个原创的笨拙线稿角色，分别拿申请表、寻找场馆、调整课堂动作和寻求帮助。</desc>
+  <rect width="960" height="250" rx="24" fill="#fffaf0"/>
+  <g stroke="#263b32" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 28 Q24 18 38 22 L225 22 Q238 26 236 41 L236 208 Q232 222 218 221 L32 221 Q18 218 20 203Z" fill="#e8f4ef"/>
+    <path d="M254 30 Q259 20 273 23 L461 23 Q474 26 473 41 L470 207 Q467 222 452 221 L268 221 Q254 217 256 202Z" fill="#fff0da"/>
+    <path d="M490 26 Q495 17 510 22 L697 23 Q710 27 708 42 L707 207 Q703 220 688 220 L504 221 Q490 217 492 202Z" fill="#eaf2f8"/>
+    <path d="M727 29 Q733 18 747 22 L930 22 Q944 26 942 42 L940 207 Q937 221 922 221 L741 221 Q727 217 729 201Z" fill="#fbeceb"/>
+  </g>
+  <g stroke="#263b32" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M70 107 Q75 74 108 78 Q139 75 145 108 L141 142 Q132 164 106 163 Q80 162 72 140Z" fill="#f4c7a1"/>
+    <path d="M75 103 Q82 66 112 74 Q139 67 146 105" fill="#d96b45"/>
+    <circle cx="95" cy="116" r="4" fill="#263b32"/><circle cx="124" cy="116" r="4" fill="#263b32"/>
+    <path d="M102 132 Q111 138 120 131 M104 163 L101 190 M129 162 L140 190 M82 177 Q111 166 143 179"/>
+    <path d="M142 108 l45 -13 l9 41 l-48 11Z" fill="#fff"/><path d="M152 108 l30 -5 M154 119 l28 -5 M158 132 l19 -4"/>
+    <path d="M295 153 Q300 119 331 121 Q362 116 368 151 L366 175 Q355 195 329 192 Q302 190 296 171Z" fill="#f4c7a1"/>
+    <path d="M298 148 Q312 112 346 124 Q364 128 367 149" fill="#9fbd8a"/>
+    <circle cx="321" cy="153" r="4" fill="#263b32"/><circle cx="347" cy="153" r="4" fill="#263b32"/>
+    <path d="M326 168 Q334 174 342 167 M312 193 l-9 13 M349 191 l10 14 M308 184 Q337 176 366 186"/>
+    <path d="M390 102 Q405 86 423 102 L434 117 M423 102 L448 74 M448 74 l-7 3 M448 74 l-2 8"/>
+    <path d="M365 75 q25 -19 52 0 q-10 9 -26 4 q-15 7 -26 -4Z" fill="#fff"/>
+    <path d="M531 106 Q536 77 563 78 Q592 75 598 106 L596 139 Q588 160 564 159 Q540 158 533 138Z" fill="#f4c7a1"/>
+    <path d="M534 102 Q544 72 570 77 Q594 77 599 102" fill="#6b8f71"/>
+    <circle cx="553" cy="113" r="4" fill="#263b32"/><circle cx="578" cy="113" r="4" fill="#263b32"/>
+    <path d="M556 128 Q565 135 575 127 M546 159 l-12 33 M585 158 l14 34 M539 179 Q566 165 596 179"/>
+    <path d="M604 153 Q634 141 661 153 M618 145 l-6 -31 M648 145 l7 -31 M612 113 l-7 -12 M655 113 l9 -12"/>
+    <path d="M612 102 q-4 -25 21 -32 q27 6 21 33" fill="#f2c16d"/>
+    <path d="M780 119 Q786 87 814 89 Q841 85 848 118 L846 151 Q838 172 813 171 Q788 169 781 149Z" fill="#f4c7a1"/>
+    <path d="M783 114 Q790 79 822 87 Q844 91 849 116" fill="#d96b45"/>
+    <circle cx="801" cy="125" r="4" fill="#263b32"/><circle cx="826" cy="125" r="4" fill="#263b32"/>
+    <path d="M803 141 Q813 147 823 139 M798 171 l-8 32 M836 169 l11 33 M791 190 Q817 177 848 191"/>
+    <path d="M858 93 Q885 66 911 91 Q914 116 886 125 Q859 117 858 93Z" fill="#fff"/>
+    <path d="M871 98 l14 0 M878 91 l0 14"/>
+    <path d="M865 142 Q893 132 918 144"/>
+  </g>
+  <g fill="#cc5a3c">
+    <circle cx="53" cy="54" r="8"/><circle cx="230" cy="180" r="6"/><circle cx="281" cy="55" r="7"/><circle cx="467" cy="174" r="6"/>
+    <circle cx="515" cy="52" r="7"/><circle cx="702" cy="180" r="6"/><circle cx="754" cy="55" r="7"/><circle cx="924" cy="178" r="7"/>
+  </g>
+</svg>

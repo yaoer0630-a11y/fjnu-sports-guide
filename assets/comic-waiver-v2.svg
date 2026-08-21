@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" role="img" aria-labelledby="title desc">
+  <title id="title">打破流言：免测就是保健班吗</title>
+  <desc id="desc">左边是把两个手续混在一起，右边用两张不同的卡片说明课程和体测申请要分开。</desc>
+  <rect width="700" height="430" rx="28" fill="#eaf2f8"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="30" y="42" font-size="25" font-weight="700" fill="#176149">规则小故事 02</text>
+    <text x="30" y="72" font-size="19" font-weight="700">“加入保健班，就自动免测？”</text>
+    <text x="30" y="103" font-size="15" fill="#64706a">课程安排和体测免测是两件事，要分别确认。</text>
+  </g>
+  <path d="M26 127 Q31 115 44 118 L325 118 Q338 121 338 135 L336 386 Q333 399 319 399 L44 399 Q30 396 30 383Z" fill="#f7fbfd" stroke="#263b32" stroke-width="6"/>
+  <path d="M365 127 Q370 115 383 118 L656 118 Q670 121 670 135 L668 386 Q665 399 651 399 L383 399 Q369 396 369 383Z" fill="#fff" stroke="#263b32" stroke-width="6"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 226 Q97 186 130 190 Q161 186 168 227 L165 270 Q155 292 129 291 Q102 289 94 269Z" fill="#f4c7a1"/>
+    <path d="M95 221 Q104 182 135 190 Q159 193 168 222" fill="#d96b45"/>
+    <circle cx="115" cy="233" r="4" fill="#263b32"/><circle cx="144" cy="233" r="4" fill="#263b32"/>
+    <path d="M112 255 Q129 245 146 256 M102 293 l-10 41 M153 291 l14 40 M97 312 Q128 296 160 314" fill="none"/>
+    <path d="M190 181 Q254 151 307 188 L304 242 Q246 256 190 220Z" fill="#fff"/>
+    <text x="248" y="203" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#b45132">进班=免测？</text>
+    <path d="M424 185 L575 185 L575 270 L424 270Z" fill="#e7f2eb"/>
+    <path d="M424 294 L575 294 L575 348 L424 348Z" fill="#fff0df"/>
+    <text x="499" y="236" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" fill="#176149">调适体育课程</text>
+    <text x="499" y="328" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" font-weight="700" fill="#b45132">体测免测申请</text>
+    <path d="M500 272 L500 291 M489 282 L500 293 L511 282" fill="none" stroke="#263b32"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="52" y="369" font-size="17" fill="#b45132">误解：自动完成</text>
+    <text x="391" y="369" font-size="17" fill="#176149">正确：两个手续分别确认</text>
+  </g>
+</svg>

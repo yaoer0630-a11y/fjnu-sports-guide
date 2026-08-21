@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="免测和保健体育不是一回事小漫画">
+  <rect width="300" height="180" rx="18" fill="#eaf2f8"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 53 Q69 32 104 52 L102 108 Q69 128 36 108Z" fill="#fff"/>
+    <path d="M50 70 l36 0 M50 84 l22 0"/>
+    <path d="M196 53 Q231 32 266 52 L264 108 Q231 128 198 108Z" fill="#fff"/>
+    <path d="M212 70 l37 0 M212 84 l21 0"/>
+    <path d="M125 75 l48 0 M158 61 l15 14 l-15 14"/>
+    <path d="M57 140 Q61 108 87 110 Q114 107 120 140 L118 160 Q109 175 87 174 Q64 173 58 158Z" fill="#f4c7a1"/>
+    <path d="M59 137 Q68 106 93 112 Q111 113 120 136" fill="#d96b45"/>
+    <circle cx="75" cy="145" r="3" fill="#263b32"/><circle cx="98" cy="145" r="3" fill="#263b32"/>
+    <path d="M77 158 Q87 164 96 157"/>
+  </g>
+  <g fill="#b45132"><circle cx="18" cy="39" r="6"/><circle cx="281" cy="141" r="6"/></g>
+</svg>

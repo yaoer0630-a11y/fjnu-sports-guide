@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" role="img" aria-labelledby="title desc">
+  <title id="title">运动中不舒服要先停下求助</title>
+  <desc id="desc">人物在运动中出现不适，另一位同学举手示意停止，并联系老师或120。</desc>
+  <rect width="700" height="430" rx="28" fill="#fbeceb"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="30" y="42" font-size="25" font-weight="700" fill="#b45132">安全小故事 03</text>
+    <text x="30" y="72" font-size="19" font-weight="700">运动时胸痛、晕厥、呼吸困难，还要坚持吗？</text>
+    <text x="30" y="103" font-size="15" fill="#64706a">不用硬撑：先停下、找现场的人、必要时拨打120。</text>
+  </g>
+  <path d="M26 127 Q31 115 44 118 L325 118 Q338 121 338 135 L336 386 Q333 399 319 399 L44 399 Q30 396 30 383Z" fill="#fff8f7" stroke="#263b32" stroke-width="6"/>
+  <path d="M365 127 Q370 115 383 118 L656 118 Q670 121 670 135 L668 386 Q665 399 651 399 L383 399 Q369 396 369 383Z" fill="#fff" stroke="#263b32" stroke-width="6"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 239 Q86 198 119 201 Q151 197 158 239 L155 280 Q145 303 118 302 Q91 300 83 279Z" fill="#f4c7a1"/>
+    <path d="M85 234 Q94 194 126 201 Q150 204 158 234" fill="#9fbd8a"/>
+    <circle cx="104" cy="246" r="4" fill="#263b32"/><circle cx="133" cy="246" r="4" fill="#263b32"/>
+    <path d="M103 263 Q118 253 135 264 M94 304 l-10 39 M145 302 l14 39 M89 323 Q119 307 152 325" fill="none"/>
+    <path d="M183 173 Q270 142 315 181 L313 236 Q247 246 183 212Z" fill="#fff"/>
+    <text x="250" y="198" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" fill="#b45132">我不舒服……</text>
+    <path d="M421 230 Q428 189 461 192 Q494 188 501 230 L498 269 Q488 291 461 290 Q434 288 425 268Z" fill="#f4c7a1"/>
+    <path d="M429 224 Q438 184 470 192 Q493 195 501 224" fill="#d96b45"/>
+    <circle cx="448" cy="236" r="4" fill="#263b32"/><circle cx="477" cy="236" r="4" fill="#263b32"/>
+    <path d="M446 256 Q461 247 477 257 M438 292 l-10 42 M489 290 l14 41 M433 311 Q463 295 496 313" fill="none"/>
+    <path d="M523 177 Q595 145 646 181 L643 239 Q582 256 523 219Z" fill="#fff"/>
+    <text x="585" y="203" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#176149">先停下！找老师</text>
+    <path d="M543 275 l0 -49 M543 226 l-17 18 M543 226 l17 18" fill="none" stroke="#b45132"/>
+    <path d="M581 288 l0 -30 M581 258 l-10 11 M581 258 l10 11" fill="none" stroke="#176149"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="52" y="369" font-size="17" fill="#b45132">不要硬撑</text>
+    <text x="391" y="369" font-size="17" fill="#176149">先停下 · 找老师 · 必要时120</text>
+  </g>
+</svg>

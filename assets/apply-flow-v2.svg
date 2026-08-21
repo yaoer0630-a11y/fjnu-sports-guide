@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760" role="img" aria-labelledby="title desc">
+  <title id="title">保健体育申请流程漫画</title>
+  <desc id="desc">四格申请流程：准备申请表、到校医院保健科、去鸣华武术馆二楼、运动不适先停下求助。</desc>
+  <rect width="800" height="760" rx="30" fill="#fffaf0"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="34" y="46" font-size="28" font-weight="700" fill="#176149">保健体育申请流程</text>
+    <text x="34" y="78" font-size="16" fill="#64706a">四步看懂：材料、签章、地点、求助</text>
+  </g>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 105 Q28 93 42 96 L382 96 Q396 99 396 113 L394 366 Q391 378 377 378 L42 378 Q28 375 28 362Z" fill="#e7f2eb"/>
+    <path d="M414 105 Q418 93 432 96 L772 96 Q786 99 786 113 L784 366 Q781 378 767 378 L432 378 Q418 375 418 362Z" fill="#fff0df"/>
+    <path d="M24 402 Q28 390 42 393 L382 393 Q396 396 396 410 L394 663 Q391 675 377 675 L42 675 Q28 672 28 659Z" fill="#eaf2f8"/>
+    <path d="M414 402 Q418 390 432 393 L772 393 Q786 396 786 410 L784 663 Q781 675 767 675 L432 675 Q418 672 418 659Z" fill="#fbeceb"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32" text-anchor="middle">
+    <text x="210" y="137" font-size="22" font-weight="700">1 先准备材料</text>
+    <text x="600" y="137" font-size="22" font-weight="700">2 校医院保健科</text>
+    <text x="210" y="434" font-size="22" font-weight="700">3 找到办理地点</text>
+    <text x="600" y="434" font-size="22" font-weight="700">4 不适先停下</text>
+  </g>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 218 Q86 178 119 181 Q151 177 158 218 L155 260 Q145 283 118 282 Q91 280 83 259Z" fill="#f4c7a1"/>
+    <path d="M85 213 Q94 173 126 181 Q150 184 158 213" fill="#d96b45"/>
+    <circle cx="105" cy="225" r="4" fill="#263b32"/><circle cx="134" cy="225" r="4" fill="#263b32"/>
+    <path d="M106 243 Q119 252 131 243 M97 284 l-12 40 M140 283 l14 41 M91 301 Q119 287 149 301" fill="none"/>
+    <path d="M175 186 l92 -20 l18 95 l-92 20Z" fill="#fff"/>
+    <path d="M194 192 l41 -9 M197 212 l53 -12 M202 232 l57 -13 M206 252 l42 -9" fill="none" stroke-width="4"/>
+    <path d="M470 223 Q476 183 509 186 Q541 182 548 223 L545 264 Q535 287 508 286 Q481 284 473 263Z" fill="#f4c7a1"/>
+    <path d="M475 218 Q484 178 516 186 Q540 189 548 218" fill="#9fbd8a"/>
+    <circle cx="495" cy="230" r="4" fill="#263b32"/><circle cx="524" cy="230" r="4" fill="#263b32"/>
+    <path d="M496 248 Q509 257 521 248 M487 288 l-12 39 M530 287 l14 40 M481 305 Q509 291 539 305" fill="none"/>
+    <path d="M455 170 L645 170 L645 211 L455 211Z" fill="#fff"/>
+    <path d="M455 170 L548 137 L645 170" fill="#e7f2eb"/>
+    <path d="M540 146 l0 48 M523 170 l34 0" stroke="#b45132"/>
+    <path d="M80 520 Q86 480 119 483 Q151 479 158 520 L155 561 Q145 584 118 583 Q91 581 83 560Z" fill="#f4c7a1"/>
+    <path d="M85 515 Q94 475 126 483 Q150 486 158 515" fill="#d96b45"/>
+    <circle cx="105" cy="527" r="4" fill="#263b32"/><circle cx="134" cy="527" r="4" fill="#263b32"/>
+    <path d="M106 545 Q119 554 131 545 M97 585 l-12 40 M140 584 l14 41 M91 602 Q119 588 149 602" fill="none"/>
+    <path d="M190 482 L340 482 L340 614 L190 614Z" fill="#fff"/>
+    <path d="M175 482 L265 430 L355 482" fill="#fff0df"/>
+    <path d="M208 512 l114 0 M208 540 l114 0 M208 568 l114 0" fill="none" stroke-width="4"/>
+    <path d="M470 525 Q476 485 509 488 Q541 484 548 525 L545 566 Q535 589 508 588 Q481 586 473 565Z" fill="#f4c7a1"/>
+    <path d="M475 520 Q484 480 516 488 Q540 491 548 520" fill="#9fbd8a"/>
+    <circle cx="495" cy="532" r="4" fill="#263b32"/><circle cx="524" cy="532" r="4" fill="#263b32"/>
+    <path d="M496 549 Q509 541 521 550 M487 590 l-12 40 M530 589 l14 40 M481 607 Q509 593 539 607" fill="none"/>
+    <path d="M582 469 Q691 441 741 482 L738 552 Q648 569 582 526Z" fill="#fff"/>
+    <path d="M591 596 l25 -18 M615 616 l22 -4 M638 628 l18 5" fill="none" stroke="#b45132"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#64706a" text-anchor="middle">
+    <text x="210" y="328" font-size="17">申请表 + 证明材料</text>
+    <text x="600" y="328" font-size="17">保健科复核、签名、盖章</text>
+    <text x="210" y="645" font-size="17">鸣华武术馆二楼</text>
+    <text x="600" y="645" font-size="17">明显不适不要硬撑</text>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32" text-anchor="middle">
+    <text x="600" y="500" font-size="21" font-weight="700" fill="#b45132">先停下！</text>
+    <text x="600" y="528" font-size="18">找老师 / 120</text>
+  </g>
+</svg>

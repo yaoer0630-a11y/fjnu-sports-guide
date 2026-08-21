@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" role="img" aria-labelledby="title desc">
+  <title id="title">体育支持指南小人</title><desc id="desc">一个举着小叶子的原创校园小人</desc>
+  <path d="M38 34 Q42 12 61 16 Q80 13 84 35 L81 59 Q75 75 60 75 Q44 74 39 58Z" fill="#f4c7a1" stroke="#263b32" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M39 33 Q43 9 63 16 Q79 15 84 33 Q71 27 60 29 Q49 25 39 33Z" fill="#d96b45" stroke="#263b32" stroke-width="5"/>
+  <circle cx="52" cy="43" r="3" fill="#263b32"/><circle cx="70" cy="43" r="3" fill="#263b32"/>
+  <path d="M54 54 Q61 59 68 53 M48 76 L40 95 M73 75 L82 95 M42 86 Q60 78 78 87" fill="none" stroke="#263b32" stroke-width="5" stroke-linecap="round"/>
+  <path d="M84 38 Q99 26 105 12 Q88 14 82 29" fill="#9fbd8a" stroke="#263b32" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M88 34 Q96 28 103 18" fill="none" stroke="#263b32" stroke-width="3" stroke-linecap="round"/>
+</svg>

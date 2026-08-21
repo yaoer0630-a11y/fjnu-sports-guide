@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" role="img" aria-labelledby="title desc">
+  <title id="title">体育支持指南校园向导</title>
+  <desc id="desc">一个简洁、友好的校园向导形象，举着叶子并背着小册子。</desc>
+  <g stroke="#263b32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 42 Q67 14 91 18 Q115 14 121 42 L118 72 Q108 91 91 91 Q73 90 65 71Z" fill="#f4c7a1"/>
+    <path d="M63 40 Q69 11 93 19 Q113 16 121 40 Q111 34 101 36 Q82 28 63 40Z" fill="#d96b45"/>
+    <circle cx="79" cy="49" r="3" fill="#263b32"/><circle cx="103" cy="49" r="3" fill="#263b32"/>
+    <path d="M81 63 Q91 70 101 62" fill="none"/>
+    <path d="M73 91 L63 113 M109 90 L120 113 M66 103 Q91 91 116 103" fill="none"/>
+    <path d="M119 51 Q138 29 153 16 Q157 42 132 57Z" fill="#9fbd8a"/>
+    <path d="M130 50 Q141 36 151 22" fill="none" stroke-width="3"/>
+    <path d="M18 64 Q20 54 30 54 L53 54 L53 95 Q51 102 43 102 L27 102 Q19 99 20 91Z" fill="#fff"/>
+    <path d="M28 66 L45 66 M28 77 L45 77 M28 88 L40 88" fill="none" stroke-width="3"/>
+    <path d="M24 48 Q37 37 50 48" fill="none" stroke="#176149" stroke-width="8"/>
+  </g>
+  <circle cx="158" cy="83" r="13" fill="#176149"/>
+  <text x="158" y="88" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12" font-weight="700" fill="#fff">体</text>
+</svg>

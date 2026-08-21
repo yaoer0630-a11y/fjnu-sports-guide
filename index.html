@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#116149">
+  <meta name="description" content="福建师范大学学校体育支持信息服务与研究测试网站">
+  <title>福师大体育支持指南</title>
+  <link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <img class="guide-mascot" src="assets/generated/pig-guide-mascot-rough_gpt-image-2.png" alt="原创猪来校园向导">
+      <div>
+        <p class="eyebrow">信息服务与研究测试网站</p>
+        <h1>福师大体育支持指南</h1>
+      </div>
+      <button class="icon-button" type="button" data-open-service="sources" aria-label="查看信息来源" title="信息来源">
+        <i data-lucide="shield-check"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="view active" id="view-home" data-view="home">
+        <a class="hotline-strip" href="tel:059122868273"><i data-lucide="phone-call"></i><span><strong>先咨询再办理</strong><small>保健体育咨询：0591-22868273（福州本地号码）</small></span><i data-lucide="chevron-right"></i></a>
+        <div class="notice-strip" role="status">
+          <i data-lucide="calendar-clock"></i>
+          <div>
+            <strong>2026年保健体育申请</strong>
+            <span>9月1日至9月23日</span>
+          </div>
+          <button type="button" data-open-service="health-class">查看</button>
+        </div>
+
+        <form class="search-box" id="home-search-form" role="search">
+          <i data-lucide="search"></i>
+          <input id="home-search" type="search" autocomplete="off" placeholder="问免测、保健体育、校园跑、成绩">
+          <button type="submit" aria-label="搜索">搜索</button>
+        </form>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <h2>常用服务</h2>
+            <button type="button" data-nav="services">全部</button>
+          </div>
+          <div class="service-grid" id="home-service-grid"></div>
+        </section>
+
+        <section class="section-block semester-preview">
+          <div class="section-heading"><h2>本学期先看</h2></div>
+          <div class="campus-comic" aria-label="本学期体育办事申请流程漫画">
+            <img src="assets/generated/pig-application-flow-rough_gpt-image-2.png" alt="原创粗线条四格校园体育漫画：申请表、校医院、武术馆二楼、运动不适求助">
+            <div class="comic-caption">申请流程</div>
+            <div class="comic-steps">
+              <div><b>1</b><span>先看通知<br>准备申请表</span></div>
+              <div><b>2</b><span>去校医院<br>保健科签章</span></div>
+              <div><b>3</b><span>到鸣华武术馆<br>二楼找承办点</span></div>
+              <div><b>4</b><span>运动不适<br>先停下求助</span></div>
+            </div>
+          </div>
+          <div class="comic-story-grid" id="comic-story-grid" aria-label="打破流言小漫画"></div>
+        </section>
+
+      </section>
+
+      <section class="view" id="view-services" data-view="services">
+        <div class="page-title">
+          <div><p class="eyebrow">学生端</p><h2>学校体育办事</h2></div>
+        </div>
+        <div class="filter-row" id="service-filters"></div>
+        <div class="service-list" id="service-list"></div>
+      </section>
+
+      <section class="view topic-view" id="view-topic" data-view="topic">
+        <div class="page-title with-back">
+          <button class="icon-button" type="button" data-back aria-label="返回"><i data-lucide="arrow-left"></i></button>
+          <div><p class="eyebrow" id="topic-kicker">专题指南</p><h2 id="topic-title"></h2></div>
+        </div>
+        <div class="topic-lead" id="topic-lead"></div>
+        <div class="topic-question-grid" id="topic-question-grid"></div>
+      </section>
+
+      <section class="view" id="view-qa" data-view="qa">
+        <div class="page-title">
+          <div><p class="eyebrow">规则问答库</p><h2>智能问答</h2></div>
+        </div>
+        <form class="search-box" id="qa-form" role="search">
+          <i data-lucide="message-circle-question"></i>
+          <input id="qa-input" type="search" autocomplete="off" placeholder="例如：保健班还要校园跑吗？">
+          <button type="submit">提问</button>
+        </form>
+        <div class="quick-questions" id="quick-questions"></div>
+        <div class="answer-panel" id="answer-panel" aria-live="polite">
+          <div class="answer-empty">
+            <i data-lucide="messages-square"></i>
+            <p>输入问题，系统只从已整理的规则库中匹配答案。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-calc" data-view="calc">
+        <div class="page-title">
+          <div><p class="eyebrow">按公开规则试算</p><h2>体测成绩核算</h2></div>
+        </div>
+        <div class="segmented" role="tablist" aria-label="计算类型">
+          <button type="button" class="active" data-calc-tab="year">学年总分</button>
+          <button type="button" data-calc-tab="bmi">BMI</button>
+          <button type="button" data-calc-tab="graduate">毕业成绩</button>
+        </div>
+
+        <section class="calc-panel active" data-calc-panel="year">
+          <p class="panel-lead">直接输入原始成绩，页面按已录入的大学组评分档位试算单项分和总分。最终成绩以学校体测系统为准。</p>
+          <form id="year-score-form" class="form-stack">
+            <div class="two-cols"><label>性别<select id="score-sex"><option value="male">男生</option><option value="female">女生</option></select></label><label>年级<select id="score-year"><option value="1">大一/大二参考档位</option><option value="3">大三/大四（先按参考档位）</option></select></label></div>
+            <label>身高（厘米）<input type="number" id="score-height" min="100" max="230" step="0.1" required></label>
+            <div class="two-cols"><label>体重（千克）<input type="number" id="score-weight" min="20" max="250" step="0.1" required></label><label>肺活量（毫升）<input type="number" id="score-vital" min="500" max="10000" required></label></div>
+            <div class="two-cols"><label>50米（秒）<input type="number" id="score-sprint" min="5" max="20" step="0.01" required></label><label>坐位体前屈（厘米）<input type="number" id="score-reach" min="-20" max="40" step="0.1" required></label></div>
+            <div class="two-cols"><label>立定跳远（厘米）<input type="number" id="score-jump" min="50" max="400" required></label><label id="strength-label">引体向上（次）<input type="number" id="score-strength" min="0" max="50" required></label></div>
+            <label id="endurance-label">1000米（分:秒，如 4:30）<input type="text" id="score-endurance" inputmode="numeric" placeholder="4:30" required></label>
+            <div class="two-cols">
+              <label>力量附加分（如系统已显示）<input type="number" id="strength-bonus" min="0" max="10" step="1" value="0"></label>
+              <label>耐力附加分（如系统已显示）<input type="number" id="endurance-bonus" min="0" max="10" step="1" value="0"></label>
+            </div>
+            <button class="primary-button" type="submit">计算学年总分</button>
+          </form>
+          <div class="calc-result" id="year-score-result"></div>
+          <a class="text-link" href="https://tky.fjnu.edu.cn/21/51/c10998a205137/page.htm" target="_blank" rel="noopener noreferrer">打开官方单项评分表</a>
+        </section>
+
+        <section class="calc-panel" data-calc-panel="bmi">
+          <p class="panel-lead">BMI = 体重（千克）÷ 身高²（米²）。结果按国家学生体质健康标准大学组区间解释。</p>
+          <form id="bmi-form" class="form-stack">
+            <div class="two-cols">
+              <label>性别<select id="bmi-sex"><option value="male">男生</option><option value="female">女生</option></select></label>
+              <label>身高（厘米）<input id="bmi-height" type="number" min="100" max="230" step="0.1" required></label>
+            </div>
+            <label>体重（千克）<input id="bmi-weight" type="number" min="20" max="250" step="0.1" required></label>
+            <button class="primary-button" type="submit">计算BMI</button>
+          </form>
+          <div class="calc-result" id="bmi-result"></div>
+        </section>
+
+        <section class="calc-panel" data-calc-panel="graduate">
+          <p class="panel-lead">国家标准：毕业学年占50%，其他学年平均分占50%。免测学年的校内处理按经验参照显示，最终以体测系统为准。</p>
+          <form id="graduate-form" class="form-stack">
+            <div class="two-cols graduate-inputs">
+              <label>大一<input type="number" data-year-score="1" min="0" max="120" step="0.1" placeholder="免测留空"></label>
+              <label>大二<input type="number" data-year-score="2" min="0" max="120" step="0.1" placeholder="免测留空"></label>
+              <label>大三<input type="number" data-year-score="3" min="0" max="120" step="0.1" placeholder="免测留空"></label>
+              <label>大四<input type="number" data-year-score="4" min="0" max="120" step="0.1" placeholder="免测留空"></label>
+            </div>
+            <button class="primary-button" type="submit">计算毕业成绩</button>
+          </form>
+          <div class="calc-result" id="graduate-result"></div>
+        </section>
+      </section>
+
+      <section class="view" id="view-teacher" data-view="teacher">
+        <div class="page-title">
+          <div><p class="eyebrow">教师与辅导员端</p><h2>教师帮助</h2></div>
+        </div>
+        <div class="teacher-intro">
+          <i data-lucide="users-round"></i>
+          <div><strong>教师公开信息与课程体验分开</strong><p>姓名、职称和公开简介来自学院官网；课程沟通体验只做匿名归纳，不公开未经授权的实名评分。</p></div>
+        </div>
+        <section class="section-block">
+          <div class="section-heading"><h2>常用服务</h2></div>
+          <div class="service-grid teacher-service-grid" id="teacher-tool-list"></div>
+        </section>
+        <section class="section-block teacher-calculator" id="teacher-rpe-section" hidden>
+          <div class="section-heading"><h2>课程强度参考</h2></div>
+          <p class="panel-lead">输入一次课时长和课后主观用力感（RPE 0-10），得到教学记录用的训练负荷参考。</p>
+          <form id="rpe-form" class="form-stack">
+            <label>课程时长（分钟）<input id="rpe-duration" type="number" min="1" max="300" required></label>
+            <label>课后用力感 RPE（0-10）<input id="rpe-value" type="number" min="0" max="10" step="1" required></label>
+            <button class="primary-button" type="submit">计算参考负荷</button>
+          </form>
+          <div class="calc-result" id="rpe-result"></div>
+        </section>
+        <section class="section-block">
+          <div class="section-heading"><h2>课程体验观察维度</h2></div>
+          <div class="experience-grid" id="experience-grid"></div>
+        </section>
+        <a class="primary-link" href="https://tky.fjnu.edu.cn/jsdw_11073/list.htm" target="_blank" rel="noopener noreferrer">查看体育科学学院教师队伍</a>
+      </section>
+
+      <section class="view" id="view-map" data-view="map">
+        <div class="page-title with-back">
+          <button class="icon-button" type="button" data-back aria-label="返回"><i data-lucide="arrow-left"></i></button>
+          <div><p class="eyebrow">具体场馆</p><h2>体育地点导航</h2></div>
+        </div>
+        <div class="filter-row" id="campus-filters"></div>
+        <div class="venue-list" id="venue-list"></div>
+      </section>
+
+      <section class="view detail-view" id="view-detail" data-view="detail">
+        <div class="page-title with-back">
+          <button class="icon-button" type="button" data-back aria-label="返回"><i data-lucide="arrow-left"></i></button>
+          <div><p class="eyebrow" id="detail-kicker"></p><h2 id="detail-title"></h2></div>
+        </div>
+        <div id="detail-content"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="主要导航">
+      <button type="button" class="active" data-nav="home"><i data-lucide="house"></i><span>首页</span></button>
+      <button type="button" data-nav="services"><i data-lucide="layout-grid"></i><span>办事</span></button>
+      <button type="button" data-nav="qa"><i data-lucide="message-circle"></i><span>问答</span></button>
+      <button type="button" data-nav="calc"><i data-lucide="calculator"></i><span>核算</span></button>
+      <button type="button" data-nav="teacher"><i data-lucide="user-round-cog"></i><span>教师端</span></button>
+    </nav>
+  </div>
+
+  <script src="assets/lucide.min.js"></script>
+  <script src="data.js?v=8"></script>
+  <script src="app.js?v=8"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" role="img" aria-labelledby="title desc">
+  <title id="title">课堂动作可以怎么调整</title>
+  <desc id="desc">教师把跑跳动作调整为低冲击练习，保留课堂目标并尊重学生的身体限制。</desc>
+  <rect width="700" height="430" rx="28" fill="#e7f2eb"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="30" y="42" font-size="25" font-weight="700" fill="#176149">课堂小故事 04</text>
+    <text x="30" y="72" font-size="19" font-weight="700">动作做不了，不等于不能参加课堂。</text>
+    <text x="30" y="103" font-size="15" fill="#64706a">先沟通可参与方式，再由教师调整动作和负荷。</text>
+  </g>
+  <path d="M26 127 Q31 115 44 118 L325 118 Q338 121 338 135 L336 386 Q333 399 319 399 L44 399 Q30 396 30 383Z" fill="#f7fcf8" stroke="#263b32" stroke-width="6"/>
+  <path d="M365 127 Q370 115 383 118 L656 118 Q670 121 670 135 L668 386 Q665 399 651 399 L383 399 Q369 396 369 383Z" fill="#fff" stroke="#263b32" stroke-width="6"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M78 233 Q84 193 117 196 Q149 192 156 233 L153 274 Q143 297 116 296 Q89 294 81 273Z" fill="#f4c7a1"/>
+    <path d="M83 228 Q92 188 124 196 Q148 199 156 228" fill="#d96b45"/>
+    <circle cx="102" cy="240" r="4" fill="#263b32"/><circle cx="131" cy="240" r="4" fill="#263b32"/>
+    <path d="M100 259 Q116 249 132 260 M92 298 l-10 41 M143 296 l14 41 M87 317 Q117 301 150 319" fill="none"/>
+    <path d="M181 177 Q272 143 315 184 L312 239 Q244 250 181 213Z" fill="#fff"/>
+    <text x="249" y="204" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#b45132">跑跳有点困难</text>
+    <path d="M425 231 Q431 190 464 193 Q497 189 504 231 L501 271 Q491 293 464 292 Q437 290 429 270Z" fill="#f4c7a1"/>
+    <path d="M433 225 Q442 185 474 193 Q496 196 504 225" fill="#9fbd8a"/>
+    <circle cx="452" cy="237" r="4" fill="#263b32"/><circle cx="481" cy="237" r="4" fill="#263b32"/>
+    <path d="M450 258 Q465 249 481 259 M442 294 l-10 40 M493 292 l14 41 M437 313 Q467 297 500 315" fill="none"/>
+    <path d="M522 167 Q597 143 646 176 L643 227 Q583 244 522 214Z" fill="#fff"/>
+    <text x="584" y="197" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#176149">保留目标，换个动作</text>
+    <path d="M545 273 Q565 247 585 273 M565 247 l0 -31 M545 273 l-12 28 M585 273 l12 28" fill="none"/>
+    <path d="M610 278 l26 -22 M610 278 l25 19" fill="none" stroke="#b45132"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="52" y="369" font-size="17" fill="#b45132">不是强行跟上</text>
+    <text x="391" y="369" font-size="17" fill="#176149">动作替代 · 负荷调整 · 保留学习目标</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" role="img" aria-labelledby="title desc">
+  <title id="title">打破流言：保健班不能申请奖学金吗</title>
+  <desc id="desc">左边是同学传播流言，右边是打开正式评审文件核对规则。</desc>
+  <rect width="700" height="430" rx="28" fill="#fff0df"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="30" y="42" font-size="25" font-weight="700" fill="#b45132">流言小故事 01</text>
+    <text x="30" y="72" font-size="19" font-weight="700">“加入保健班，就不能申请奖学金？”</text>
+    <text x="30" y="103" font-size="15" fill="#64706a">听到传言先停一下，把课程和评审规则分开核对。</text>
+  </g>
+  <path d="M26 127 Q31 115 44 118 L325 118 Q338 121 338 135 L336 386 Q333 399 319 399 L44 399 Q30 396 30 383Z" fill="#fff8ed" stroke="#263b32" stroke-width="6"/>
+  <path d="M365 127 Q370 115 383 118 L656 118 Q670 121 670 135 L668 386 Q665 399 651 399 L383 399 Q369 396 369 383Z" fill="#e7f2eb" stroke="#263b32" stroke-width="6"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M74 230 Q80 190 113 193 Q145 188 153 230 L150 273 Q140 295 113 294 Q86 292 77 271Z" fill="#f4c7a1"/>
+    <path d="M78 225 Q87 184 120 194 Q143 196 153 225" fill="#d96b45"/>
+    <circle cx="99" cy="236" r="4" fill="#263b32"/><circle cx="128" cy="236" r="4" fill="#263b32"/>
+    <path d="M97 257 Q114 247 130 259 M88 296 l-11 38 M139 294 l15 39 M83 315 Q114 298 146 316" fill="none"/>
+    <path d="M177 182 Q252 144 310 190 Q312 228 273 241 Q218 244 177 213Z" fill="#fff"/>
+    <text x="244" y="190" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#b45132">听说不能申请？</text>
+    <path d="M415 238 Q421 198 454 201 Q487 196 494 238 L491 278 Q481 301 454 300 Q427 298 418 277Z" fill="#f4c7a1"/>
+    <path d="M421 232 Q431 191 461 201 Q486 202 494 232" fill="#9fbd8a"/>
+    <circle cx="440" cy="244" r="4" fill="#263b32"/><circle cx="470" cy="244" r="4" fill="#263b32"/>
+    <path d="M439 263 Q454 273 469 263 M430 302 l-11 36 M480 300 l15 38 M425 322 Q455 306 488 323" fill="none"/>
+    <path d="M512 162 Q594 144 641 174 L638 238 Q579 252 512 225Z" fill="#fff"/>
+    <path d="M527 183 l84 0 M527 205 l68 0" fill="none" stroke-width="4"/>
+    <path d="M543 274 L579 305 L628 265" fill="none" stroke="#176149" stroke-width="12"/>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#263b32">
+    <text x="52" y="369" font-size="17" fill="#b45132">传言：一律不行</text>
+    <text x="391" y="369" font-size="17" fill="#176149">做法：查当年评审文件</text>
+  </g>
+</svg>

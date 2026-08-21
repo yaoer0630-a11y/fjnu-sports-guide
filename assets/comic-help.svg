@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="运动中不舒服要先求助小漫画">
+  <rect width="300" height="180" rx="18" fill="#fbeceb"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M43 90 Q48 58 75 61 Q102 57 108 90 L106 118 Q97 139 75 138 Q51 137 45 118Z" fill="#f4c7a1"/>
+    <path d="M45 87 Q55 53 81 61 Q101 64 108 88" fill="#9fbd8a"/>
+    <circle cx="63" cy="96" r="3" fill="#263b32"/><circle cx="87" cy="96" r="3" fill="#263b32"/>
+    <path d="M64 109 Q75 104 85 111 M57 139 l-10 30 M94 138 l10 30 M53 154 Q75 145 99 155" fill="none"/>
+    <path d="M136 52 Q171 29 207 53 L205 89 Q172 108 137 90Z" fill="#fff"/>
+    <path d="M150 63 l31 0 M150 77 l42 0"/>
+    <path d="M220 92 Q224 63 249 66 Q274 63 280 93 L277 124 Q269 144 247 143 Q225 142 220 123Z" fill="#f4c7a1"/>
+    <path d="M221 90 Q231 60 254 67 Q271 68 280 91" fill="#d96b45"/>
+    <circle cx="236" cy="101" r="3" fill="#263b32"/><circle cx="259" cy="101" r="3" fill="#263b32"/>
+    <path d="M238 116 Q248 123 257 115 M232 143 l-9 28 M267 142 l10 29 M227 157 Q249 148 273 159" fill="none"/>
+    <path d="M158 116 l0 33 M148 126 l20 0" stroke="#b45132"/>
+  </g>
+  <g fill="#b45132"><circle cx="125" cy="41" r="6"/><circle cx="211" cy="128" r="5"/></g>
+</svg>

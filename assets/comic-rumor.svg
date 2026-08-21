@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="打破流言的小漫画">
+  <rect width="300" height="180" rx="18" fill="#fff0df"/>
+  <g stroke="#263b32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 89 Q48 57 76 59 Q104 56 109 89 L106 120 Q98 140 75 139 Q51 137 45 119Z" fill="#f4c7a1"/>
+    <path d="M46 86 Q55 51 82 59 Q101 61 109 85" fill="#d96b45"/>
+    <circle cx="63" cy="96" r="3" fill="#263b32"/><circle cx="87" cy="96" r="3" fill="#263b32"/>
+    <path d="M65 110 Q75 118 84 109 M57 140 l-8 28 M94 139 l10 28 M53 154 Q76 144 99 155" fill="none"/>
+    <path d="M134 54 Q168 31 205 55 L204 91 Q171 108 135 90Z" fill="#fff"/>
+    <path d="M147 65 l43 0 M148 78 l28 0"/>
+    <path d="M218 99 Q222 67 248 69 Q273 66 279 99 L277 129 Q269 148 246 147 Q224 145 219 128Z" fill="#f4c7a1"/>
+    <path d="M220 96 Q229 66 253 70 Q270 72 279 98" fill="#9fbd8a"/>
+    <circle cx="236" cy="107" r="3" fill="#263b32"/><circle cx="258" cy="107" r="3" fill="#263b32"/>
+    <path d="M238 120 Q247 127 256 119 M231 147 l-8 26 M265 146 l9 27 M227 160 Q248 151 271 161" fill="none"/>
+    <path d="M156 118 Q169 104 182 118 M169 105 l0 -17" fill="none"/>
+  </g>
+  <g fill="#b45132"><circle cx="126" cy="40" r="6"/><circle cx="211" cy="128" r="5"/><circle cx="34" cy="43" r="5"/></g>
+</svg>
