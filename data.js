@@ -137,7 +137,7 @@ window.SPORTS_GUIDE = {
 
   homeServices: [
     "fitness-waiver", "health-class", "fitness-booking", "fitness-score",
-    "campus-run", "venues", "teacher-support", "activities", "science-exercise", "emergency"
+    "campus-run", "venues", "teacher-support", "activities", "science-exercise", "emergency", "feedback"
   ],
 
   alerts: [
@@ -147,6 +147,20 @@ window.SPORTS_GUIDE = {
   ],
 
   services: [
+    {
+      id: "feedback",
+      title: "留言反馈",
+      category: "反馈",
+      icon: "message-square-plus",
+      status: "匿名问卷",
+      summary: "告诉我们你需要哪些体育支持信息。",
+      href: "https://v.wjx.cn/vm/tqTVLMc.aspx",
+      kicker: "学生需求反馈",
+      lead: "点击进入问卷星，反馈你在保健体育、体测、大学体育、校园跑、场馆或其他体育事项中遇到的问题。",
+      sections: [
+        { title: "填写前请知道", items: ["问卷用于了解学生体育信息需求和网站使用感受。", "不需要填写诊断证明、病历、身份证号等敏感信息。", "紧急身体不适请先联系现场教师、校医院或拨打120，不要等待问卷回复。"] }
+      ]
+    },
     {
       id: "activities",
       title: "课余活动",

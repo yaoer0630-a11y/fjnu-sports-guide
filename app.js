@@ -24,10 +24,14 @@
 
   const iconMarkup = (name) => `<i data-lucide="${escapeHtml(name)}"></i>`;
 
+  const externalLinkAttrs = (href) => /^https?:\/\//i.test(String(href || ""))
+    ? ' target="_blank" rel="noopener noreferrer"'
+    : "";
+
   function serviceTile(item) {
     if (item.href) {
       return `
-      <a class="service-tile" href="${escapeHtml(item.href)}" aria-label="打开${escapeHtml(item.title)}">
+      <a class="service-tile" href="${escapeHtml(item.href)}"${externalLinkAttrs(item.href)} aria-label="打开${escapeHtml(item.title)}">
         <span class="tile-icon">${iconMarkup(item.icon)}</span>
         <span>${escapeHtml(item.title)}</span>
       </a>`;
@@ -42,7 +46,7 @@
   function serviceRow(item) {
     if (item.href) {
       return `
-      <a class="service-row" href="${escapeHtml(item.href)}" aria-label="打开${escapeHtml(item.title)}">
+      <a class="service-row" href="${escapeHtml(item.href)}"${externalLinkAttrs(item.href)} aria-label="打开${escapeHtml(item.title)}">
         <span class="row-icon">${iconMarkup(item.icon)}</span>
         <span class="row-copy">
           <strong>${escapeHtml(item.title)}</strong>
