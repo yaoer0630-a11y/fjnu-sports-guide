@@ -527,7 +527,7 @@ window.SPORTS_GUIDE = {
   guide.homeServices = [
     "fitness-waiver", "health-class", "university-pe", "fitness-booking",
     "fitness-score", "campus-run", "activities", "nutrition", "venues",
-    "mental-health", "emergency", "teacher-support", "science-exercise"
+    "mental-health", "emergency", "teacher-support", "science-exercise", "feedback"
   ];
 
   addService({
