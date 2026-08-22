@@ -73,7 +73,7 @@
 
     document.querySelector("#comic-story-grid").innerHTML = data.comicStories.map((story) => `
       <button class="comic-story-card" type="button" data-open-comic="${escapeHtml(story.id)}">
-        <img src="${escapeHtml(story.image)}" alt="${escapeHtml(story.title)}">
+        <img src="${escapeHtml(story.image)}" alt="${escapeHtml(story.title)}" loading="lazy" decoding="async">
         <strong>${escapeHtml(story.title)}</strong>
         <span>${escapeHtml(story.short)}</span>
       </button>`).join("");
@@ -91,7 +91,7 @@
         <div class="answer-questions">${section.items.map((text) => `<details><summary>${escapeHtml(text)}</summary><p>${escapeHtml(text)}</p></details>`).join("")}</div>
       </section>`).join("");
     document.querySelector("#detail-content").innerHTML = `
-      <div class="comic-detail-image"><img src="${escapeHtml(story.image)}" alt="${escapeHtml(story.title)}"></div>
+      <div class="comic-detail-image"><img src="${escapeHtml(story.image)}" alt="${escapeHtml(story.title)}" decoding="async"></div>
       <div class="detail-hero"><p>${escapeHtml(story.lead)}</p></div>
       ${sections}
       ${renderSources(story.sourceIds)}
