@@ -512,7 +512,7 @@ window.SPORTS_GUIDE = {
 
   guide.homeServices = [
     "fitness-waiver", "health-class", "university-pe", "fitness-booking",
-    "fitness-score", "campus-run", "activities", "meme-game", "nutrition", "venues",
+    "fitness-score", "campus-run", "activities", "nutrition", "venues",
     "mental-health", "emergency", "teacher-support", "science-exercise"
   ];
 
@@ -548,16 +548,6 @@ window.SPORTS_GUIDE = {
       { title: "现场地址（经验参照）", items: ["旗山：榕苑生活区百草园食堂三楼。", "仓山：26号楼三楼。", "楼栋和开放状态可能调整，出发前请以学校通知或电话确认。"] },
       { title: "需要立即帮助时", items: ["出现自伤风险、意识异常或其他紧急危险时，先拨打120或联系现场老师、辅导员和保卫人员。", "一般咨询可预约心理中心，不必等到问题变得严重才求助。"] }
     ], sourceIds: ["wikiHospital"]
-  });
-
-  addService({
-    id: "meme-game", title: "互动小游戏", category: "互动娱乐", icon: "gamepad-2",
-    status: "独立网页体验", summary: "猪来体育合成：合成梗球，顺便辨认体育信息。",
-    href: "game.html", kicker: "手机互动小游戏",
-    lead: "在同一网站内打开独立游戏页面。游戏中的政策弹幕只作轻量互动提示，正式规则请回到指南专题查看。",
-    sections: [
-      { title: "怎么玩", items: ["同款梗球碰到一起会升级，场地堆到危险线会结束。", "政策弹幕可以点击判断，也可以直接略过；答题积分不影响任何学校结果。", "手机浏览器首次播放声音需要先轻触游戏画面。"] }
-    ]
   });
 
   const update = (id, changes) => { const item = guide.services.find((service) => service.id === id); if (item) Object.assign(item, changes); };
