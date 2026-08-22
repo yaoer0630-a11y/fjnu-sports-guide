@@ -25,6 +25,13 @@
   const iconMarkup = (name) => `<i data-lucide="${escapeHtml(name)}"></i>`;
 
   function serviceTile(item) {
+    if (item.href) {
+      return `
+      <a class="service-tile" href="${escapeHtml(item.href)}" aria-label="打开${escapeHtml(item.title)}">
+        <span class="tile-icon">${iconMarkup(item.icon)}</span>
+        <span>${escapeHtml(item.title)}</span>
+      </a>`;
+    }
     return `
       <button class="service-tile" type="button" data-open-service="${escapeHtml(item.id)}">
         <span class="tile-icon">${iconMarkup(item.icon)}</span>
@@ -33,6 +40,18 @@
   }
 
   function serviceRow(item) {
+    if (item.href) {
+      return `
+      <a class="service-row" href="${escapeHtml(item.href)}" aria-label="打开${escapeHtml(item.title)}">
+        <span class="row-icon">${iconMarkup(item.icon)}</span>
+        <span class="row-copy">
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.summary)}</span>
+          <span class="status">${escapeHtml(item.status)}</span>
+        </span>
+        ${iconMarkup("chevron-right")}
+      </a>`;
+    }
     return `
       <button class="service-row" type="button" data-open-service="${escapeHtml(item.id)}">
         <span class="row-icon">${iconMarkup(item.icon)}</span>
@@ -488,6 +507,22 @@
 
   function initializeEvents() {
     document.addEventListener("click", (event) => {
+      const openQr = event.target.closest("[data-open-qr]");
+      if (openQr) {
+        const modal = document.querySelector("#group-qr-modal");
+        modal.hidden = false;
+        document.body.classList.add("modal-open");
+        modal.querySelector("[data-close-qr]")?.focus();
+        refreshIcons();
+        return;
+      }
+      const closeQr = event.target.closest("[data-close-qr]");
+      if (closeQr) {
+        document.querySelector("#group-qr-modal").hidden = true;
+        document.body.classList.remove("modal-open");
+        return;
+      }
+
       const nav = event.target.closest("[data-nav]");
       if (nav) navigate(nav.dataset.nav);
 
@@ -573,6 +608,13 @@
       const female = event.target.value === "female";
       document.querySelector("#strength-label").firstChild.textContent = female ? "仰卧起坐（次）" : "引体向上（次）";
       document.querySelector("#endurance-label").firstChild.textContent = female ? "800米（分:秒，如 4:30）" : "1000米（分:秒，如 4:30）";
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !document.querySelector("#group-qr-modal").hidden) {
+        document.querySelector("#group-qr-modal").hidden = true;
+        document.body.classList.remove("modal-open");
+      }
     });
   }
 

@@ -6,12 +6,12 @@
   <meta name="theme-color" content="#116149">
   <meta name="description" content="福建师范大学学校体育支持信息服务与研究测试网站">
   <title>福师大体育支持指南</title>
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <img class="guide-mascot" src="assets/generated/pig-guide-mascot-rough_gpt-image-2.png" alt="原创猪来校园向导">
+      <img class="guide-mascot" src="assets/generated/pig-guide-mascot-rough_gpt-image-2.jpg" alt="原创猪来校园向导">
       <div>
         <p class="eyebrow">信息服务与研究测试网站</p>
         <h1>福师大体育支持指南</h1>
@@ -33,6 +33,12 @@
           <button type="button" data-open-service="health-class">查看</button>
         </div>
 
+        <a class="group-qr-strip" href="assets/group-qr.jpg" target="_blank" rel="noopener noreferrer" aria-label="打开2026年保健班申请群二维码">
+          <span class="group-qr-icon"><i data-lucide="qr-code"></i></span>
+          <span class="group-qr-copy"><strong>2026年保健班申请群</strong><small>点击查看群二维码，入群后以群内通知为准</small></span>
+          <i data-lucide="chevron-right"></i>
+        </a>
+
         <form class="search-box" id="home-search-form" role="search">
           <i data-lucide="search"></i>
           <input id="home-search" type="search" autocomplete="off" placeholder="问免测、保健体育、校园跑、成绩">
@@ -50,7 +56,7 @@
         <section class="section-block semester-preview">
           <div class="section-heading"><h2>本学期先看</h2></div>
           <div class="campus-comic" aria-label="本学期体育办事申请流程漫画">
-            <img src="assets/generated/pig-application-flow-rough_gpt-image-2.png" alt="原创粗线条四格校园体育漫画：申请表、校医院、武术馆二楼、运动不适求助">
+            <img src="assets/generated/pig-application-flow-rough_gpt-image-2.jpg" alt="原创粗线条四格校园体育漫画：申请表、校医院、武术馆二楼、运动不适求助">
             <div class="comic-caption">申请流程</div>
             <div class="comic-steps">
               <div><b>1</b><span>先看通知<br>准备申请表</span></div>
@@ -203,6 +209,17 @@
       </section>
     </main>
 
+    <div class="qr-modal" id="group-qr-modal" hidden>
+      <div class="qr-modal-backdrop" data-close-qr></div>
+      <section class="qr-modal-card" role="dialog" aria-modal="true" aria-labelledby="group-qr-title">
+        <button class="qr-close icon-button" type="button" data-close-qr aria-label="关闭二维码"><i data-lucide="x"></i></button>
+        <p class="eyebrow">临时申请群入口</p>
+        <h2 id="group-qr-title">2026—2027学年保健班申请群</h2>
+        <img src="assets/group-qr.jpg" alt="2026—2027学年保健班申请群二维码">
+        <p class="qr-expiry">二维码7天内（8月28日前）有效，重新进入将更新。</p>
+      </section>
+    </div>
+
     <nav class="bottom-nav" aria-label="主要导航">
       <button type="button" class="active" data-nav="home"><i data-lucide="house"></i><span>首页</span></button>
       <button type="button" data-nav="services"><i data-lucide="layout-grid"></i><span>办事</span></button>
@@ -212,8 +229,21 @@
     </nav>
   </div>
 
-  <script src="assets/lucide.min.js"></script>
-  <script src="data.js?v=8"></script>
-  <script src="app.js?v=8"></script>
+  <script src="lucide.min.js"></script>
+  <script src="data.js?v=10"></script>
+  <script src="app.js?v=10"></script>
+  <script>
+    (() => {
+      const modal = document.getElementById("group-qr-modal");
+      if (!modal) return;
+      const close = () => { modal.hidden = true; document.body.classList.remove("modal-open"); };
+      document.querySelector("[data-open-qr]")?.addEventListener("click", () => {
+        modal.hidden = false;
+        document.body.classList.add("modal-open");
+      });
+      modal.querySelectorAll("[data-close-qr]").forEach((button) => button.addEventListener("click", close));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape") close(); });
+    })();
+  </script>
 </body>
 </html>

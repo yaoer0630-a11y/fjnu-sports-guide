@@ -10,7 +10,7 @@ window.SPORTS_GUIDE = {
       id: "rumor-scholarship",
       title: "保健班不能申请奖学金？",
       short: "先别急着信，规则要分开看。",
-      image: "assets/generated/pig-rumor-scholarship-rough_gpt-image-2.png",
+      image: "assets/generated/pig-rumor-scholarship-rough_gpt-image-2.jpg",
       lead: "“加入保健班就一定不能申请奖学金”不能直接当作结论。课程成绩、体测免测和具体奖项的评审规则要分别核对。",
       sections: [
         { title: "漫画里的答案", items: ["保健体育是课程安排，奖学金或评优是另一套评审规则。", "福建师大《保健体育》办法提到，评优评先时对应学年课程成绩与体测成绩同时存在的择高选取。", "具体奖项仍以当年评审文件为准，网页不作绝对保证。"] }
@@ -20,7 +20,7 @@ window.SPORTS_GUIDE = {
       id: "rumor-waiver",
       title: "免测就是保健班？",
       short: "两个手续，要分开办理。",
-      image: "assets/generated/pig-rumor-waiver-rough_gpt-image-2.png",
+      image: "assets/generated/pig-rumor-waiver-rough_gpt-image-2.jpg",
       lead: "体测免测和保健体育有关联，但不是同一个手续。一个是体测例外申请，一个是课程安排。",
       sections: [
         { title: "漫画里的答案", items: ["申请保健体育后，仍要按学校要求另行填写体测免测申请。", "是否免测、材料怎么交、何时截止，以当学期体测通知和系统提示为准。"] }
@@ -30,7 +30,7 @@ window.SPORTS_GUIDE = {
       id: "rumor-help",
       title: "运动不舒服还要坚持？",
       short: "先停下，再找老师或医务人员。",
-      image: "assets/generated/pig-emergency-help-rough_gpt-image-2.png",
+      image: "assets/generated/pig-emergency-help-rough_gpt-image-2.jpg",
       lead: "体育课或课外活动中出现明显不适时，先停止活动并求助，不用为了完成次数硬撑。",
       sections: [
         { title: "漫画里的答案", items: ["胸痛、晕厥、明显呼吸困难、意识异常或急性损伤时，立即停止并拨打120。", "同时联系现场教师、同学或校方应急人员。", "非紧急问题再联系任课教师、学院辅导员或校医院。"] }
@@ -40,7 +40,7 @@ window.SPORTS_GUIDE = {
       id: "story-adjust",
       title: "动作做不了就不能上课？",
       short: "可以先沟通，再调整动作和负荷。",
-      image: "assets/generated/pig-class-adjustment-rough_gpt-image-2.png",
+      image: "assets/generated/pig-class-adjustment-rough_gpt-image-2.jpg",
       lead: "动作做不了不等于完全不能参与课堂。教师可以围绕相同学习目标，调整动作形式、负荷或参与方式。",
       sections: [
         { title: "漫画里的答案", items: ["先说明自己当前可以做什么、哪些动作需要避免。", "教师可依据学生身体状况开展分类教学和个别辅导。", "具体调整不能替代医学判断；出现明显不适时应停止活动并求助。"] }
@@ -512,7 +512,7 @@ window.SPORTS_GUIDE = {
 
   guide.homeServices = [
     "fitness-waiver", "health-class", "university-pe", "fitness-booking",
-    "fitness-score", "campus-run", "activities", "nutrition", "venues",
+    "fitness-score", "campus-run", "activities", "meme-game", "nutrition", "venues",
     "mental-health", "emergency", "teacher-support", "science-exercise"
   ];
 
@@ -548,6 +548,16 @@ window.SPORTS_GUIDE = {
       { title: "现场地址（经验参照）", items: ["旗山：榕苑生活区百草园食堂三楼。", "仓山：26号楼三楼。", "楼栋和开放状态可能调整，出发前请以学校通知或电话确认。"] },
       { title: "需要立即帮助时", items: ["出现自伤风险、意识异常或其他紧急危险时，先拨打120或联系现场老师、辅导员和保卫人员。", "一般咨询可预约心理中心，不必等到问题变得严重才求助。"] }
     ], sourceIds: ["wikiHospital"]
+  });
+
+  addService({
+    id: "meme-game", title: "互动小游戏", category: "互动娱乐", icon: "gamepad-2",
+    status: "独立网页体验", summary: "猪来体育合成：合成梗球，顺便辨认体育信息。",
+    href: "game.html", kicker: "手机互动小游戏",
+    lead: "在同一网站内打开独立游戏页面。游戏中的政策弹幕只作轻量互动提示，正式规则请回到指南专题查看。",
+    sections: [
+      { title: "怎么玩", items: ["同款梗球碰到一起会升级，场地堆到危险线会结束。", "政策弹幕可以点击判断，也可以直接略过；答题积分不影响任何学校结果。", "手机浏览器首次播放声音需要先轻触游戏画面。"] }
+    ]
   });
 
   const update = (id, changes) => { const item = guide.services.find((service) => service.id === id); if (item) Object.assign(item, changes); };

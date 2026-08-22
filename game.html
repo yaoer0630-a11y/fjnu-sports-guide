@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08111d">
+  <meta name="description" content="猪来体育合成：面向手机浏览器的体育知识互动小游戏">
+  <title>猪来体育合成｜福师大体育支持指南</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6fbff;
+      --muted: #a9bacb;
+      --line: #29435c;
+      --panel: #0d1a29;
+      --cyan: #58e5ff;
+      --pink: #ff6cbb;
+      --yellow: #ffd45a;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; background: #050a12; }
+    body { color: var(--ink); font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; }
+    a, button { font: inherit; }
+    a { color: inherit; }
+    .game-shell { width: min(100%, 620px); min-height: 100vh; margin: 0 auto; padding: max(10px, env(safe-area-inset-top)) 12px calc(16px + env(safe-area-inset-bottom)); background: #07101c; }
+    .game-toolbar { min-height: 46px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .back-link, .fullscreen-button { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: var(--panel); text-decoration: none; cursor: pointer; }
+    .back-link:hover, .fullscreen-button:hover { border-color: var(--cyan); color: var(--cyan); }
+    .back-link svg, .fullscreen-button svg { width: 18px; height: 18px; }
+    .game-heading { margin: 12px 2px 10px; }
+    .game-heading h1 { margin: 0; color: var(--cyan); font-size: clamp(20px, 5vw, 28px); line-height: 1.25; }
+    .game-heading p { margin: 5px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .game-frame-wrap { position: relative; width: 100%; aspect-ratio: 9 / 14; min-height: 520px; max-height: calc(100vh - 138px); overflow: hidden; border: 1px solid var(--cyan); border-radius: 14px; background: #02050a; box-shadow: 0 0 0 2px rgba(88,229,255,.1), 0 0 26px rgba(88,229,255,.12); }
+    .game-frame-wrap::before, .game-frame-wrap::after { position: absolute; z-index: 2; width: 10px; height: 10px; border-color: var(--pink); border-style: solid; content: ""; pointer-events: none; }
+    .game-frame-wrap::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+    .game-frame-wrap::after { right: -1px; bottom: -1px; border-width: 0 2px 2px 0; }
+    .game-frame { width: 100%; height: 100%; display: block; border: 0; background: #02050a; }
+    .game-note { margin: 10px 2px 0; padding: 10px 12px; border-left: 3px solid var(--yellow); color: var(--muted); background: rgba(13,26,41,.88); font-size: 12px; line-height: 1.55; }
+    .game-note strong { color: var(--yellow); }
+    .button-label { white-space: nowrap; }
+    @media (max-width: 430px) {
+      .game-shell { padding-left: 10px; padding-right: 10px; }
+      .button-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+      .back-link, .fullscreen-button { width: 44px; padding: 0; }
+      .game-frame-wrap { min-height: 500px; max-height: calc(100vh - 120px); }
+      .game-heading p { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="game-shell">
+    <div class="game-toolbar">
+      <a class="back-link" href="index.html" aria-label="返回福师大体育支持指南">
+        <i data-lucide="arrow-left" aria-hidden="true"></i><span class="button-label">返回指南</span>
+      </a>
+      <button class="fullscreen-button" type="button" data-fullscreen aria-label="全屏显示游戏" title="全屏显示游戏">
+        <i data-lucide="maximize" aria-hidden="true"></i><span class="button-label">全屏</span>
+      </button>
+    </div>
+    <header class="game-heading">
+      <h1>猪来体育合成</h1>
+      <p>同款梗球碰到一起就会升级。政策弹幕可以点，也可以略过。</p>
+    </header>
+    <div class="game-frame-wrap" data-game-wrap>
+      <iframe class="game-frame" src="game/index.html" title="猪来体育合成游戏" allow="autoplay; fullscreen" data-game-frame></iframe>
+    </div>
+    <p class="game-note"><strong>研究测试小游戏：</strong>游戏积分仅用于互动，不代表体测、课程、评优或毕业结果；首次播放声音需要在游戏内轻触后由浏览器允许。</p>
+  </main>
+  <script src="lucide.min.js"></script>
+  <script>
+    if (window.lucide) window.lucide.createIcons({ attrs: { "stroke-width": 1.8 } });
+    const fullscreenButton = document.querySelector("[data-fullscreen]");
+    const frameWrap = document.querySelector("[data-game-wrap]");
+    fullscreenButton.addEventListener("click", async () => {
+      try {
+        if (!document.fullscreenElement) await frameWrap.requestFullscreen();
+        else await document.exitFullscreen();
+      } catch (error) {
+        console.warn("Fullscreen is not available", error);
+      }
+    });
+  </script>
+</body>
+</html>
