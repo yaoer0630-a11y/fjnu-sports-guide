@@ -132,6 +132,20 @@ window.SPORTS_GUIDE = {
       date: "2024-06-26",
       url: "https://www.who.int/zh/news-room/fact-sheets/detail/physical-activity",
       status: "官方健康科普"
+    },
+    comprehensiveAssessment: {
+      title: "关于印发《福建师范大学学生综合素质测评规定》的通知",
+      issuer: "福建师范大学学生工作部（处）",
+      date: "2022-02-24",
+      url: "https://stu.fjnu.edu.cn/cc/1d/c5741a314397/page.htm",
+      status: "学校官网正式文件；师委学工〔2022〕5号"
+    },
+    wikiAssessment: {
+      title: "福建师范大学Wiki：综合测评与校园活动经验",
+      issuer: "非官方学生Wiki",
+      date: "页面持续更新",
+      url: "https://fjnu.nekoark.com/study/choose/",
+      status: "经验参照；不能替代学院测评细则"
     }
   },
 
@@ -440,6 +454,10 @@ window.SPORTS_GUIDE = {
     { q: "网站会保存病历吗？", keywords: ["病历", "隐私", "诊断证明", "上传", "保存"], answer: "不会。本站不接收或保存诊断证明、病历、残疾证明、身份证和个人健康档案。办理材料只提交到学校正式系统或指定线下部门。", status: "隐私边界", sourceIds: [], serviceId: "sources" },
     { q: "减肥是不是只要跑步？", keywords: ["减肥", "减脂", "跑步", "饮食", "力量训练"], answer: "不是。减脂需要把饮食、身体活动、力量训练、睡眠和长期行为习惯一起考虑。步行、骑车、游泳、球类和力量训练都可以参与，关键是身体允许且能持续。", status: "一般健康教育", sourceIds: ["weightGuide", "whoActivity"], serviceId: "science-exercise" },
     { q: "每周运动多久比较合适？", keywords: ["每周", "运动多久", "150分钟", "运动量", "减脂"], answer: "世卫组织将成年人每周至少150分钟中等强度身体活动作为全球一般建议，并强调任何活动都比完全不活动好。特殊体质、伤病或疾病学生需要根据专业意见调整。", status: "世界卫生组织建议", sourceIds: ["whoActivity"], serviceId: "science-exercise" }
+    ,{ q: "体育活动会影响综合素质测评吗？", keywords: ["综测", "综合素质", "体育活动", "文体分", "影响"], answer: "可能作为体育测评或活动记录的参考，但不能理解为参加一次活动就自动加分。具体认定由学校规定和学院细则执行。", status: "学校规定+学院审核", sourceIds: ["comprehensiveAssessment", "wikiAssessment"], serviceId: "comprehensive-assessment" }
+    ,{ q: "参加校运会、院运会能加多少分？", keywords: ["校运会", "院运会", "加分", "奖励分", "综测"], answer: "不能直接给出统一分值。校运会、院运会或社团活动是否计入奖励分、需要什么证明以及分值上限，都以本学院综合素质测评细则和审核结果为准。", status: "学院细则待核对", sourceIds: ["comprehensiveAssessment", "wikiAssessment"], serviceId: "comprehensive-assessment" }
+    ,{ q: "保健体育或调适体育学生如何参加体育测评？", keywords: ["保健体育", "调适体育", "体育测评", "综测", "特殊体质"], answer: "课程成绩、体测免测和综合素质测评是不同事项。请向辅导员、任课教师或学院测评负责老师确认课程成绩、体育活动认定和替代参与方式。", status: "需向学院确认", sourceIds: ["comprehensiveAssessment", "healthPolicy"], serviceId: "comprehensive-assessment" }
+    ,{ q: "综合素质测评结果有异议怎么办？", keywords: ["综测", "异议", "申诉", "更正", "测评结果"], answer: "在学院规定的公示或申诉期限内，先联系辅导员或学院测评负责老师，说明具体项目并申请核对、更正。网页不能代替学院审核。", status: "学院办理", sourceIds: ["comprehensiveAssessment"], serviceId: "comprehensive-assessment" }
   ],
 
   venues: [
@@ -527,7 +545,7 @@ window.SPORTS_GUIDE = {
   guide.homeServices = [
     "fitness-waiver", "health-class", "university-pe", "fitness-booking",
     "fitness-score", "campus-run", "activities", "nutrition", "venues",
-    "mental-health", "emergency", "teacher-support", "science-exercise", "feedback"
+    "mental-health", "emergency", "teacher-support", "science-exercise", "comprehensive-assessment", "feedback"
   ];
 
   addService({
@@ -551,6 +569,20 @@ window.SPORTS_GUIDE = {
       { title: "运动后", items: ["先补水、休息，再按日常饮食补充主食、蔬菜和蛋白质。", "不要把极端节食、快速减重或保健品当作运动成绩的捷径。"] },
       { title: "校园餐饮入口", items: ["旗山、仓山校区均有食堂和餐厅；福Star APP曾提供食堂人流量参考，是否可用以当前校园服务为准。", "过敏、特殊饮食或运动中出现不适时，先咨询校医院或专业人员。"] }
     ], sourceIds: ["wikiEat", "weightGuide"]
+  });
+
+  addService({
+    id: "comprehensive-assessment", title: "综合素质测评", category: "学生事务", icon: "badge-check",
+    status: "学校规定+经验参照", summary: "体育活动、综测与奖励分怎么认定？",
+    kicker: "综合素质测评 / 文体分", lead: "综合素质测评不是单看一次比赛或一次打卡。体育、美育、劳育部分如何计分，要结合学校规定、学院细则和当学期审核结果。",
+    sections: [
+      { title: "它是什么", items: ["本科生综合素质测评由德育测评×20%、智育测评×65%、体育/美育/劳育测评×15%构成。", "体育、美育、劳育测评分通常按基础分+奖励分-扣分计算；基础分和奖励分上限以学校及学院细则为准。", "测评结果由学院审核，学生不能自行把参加活动直接换算成固定分数。"] },
+      { title: "体育部分看什么", items: ["体育意识、运动行为与习惯。", "体质水平、体育技能和健康生活方式。", "参加学校、学院、年级、班级组织的体育活动情况。"] },
+      { title: "活动和奖励分", items: ["校运会、院运会、体育社团、班级或年级活动、日常锻炼可能作为测评参考。", "无故不参加集体体育文化、艺术或劳动活动，可能按学院细则扣分。", "参加活动不等于自动加分；奖励分项目、证明材料和上限由学院审核确认。"] },
+      { title: "调适体育学生", items: ["调适体育/保健体育、体测免测、综合素质测评、奖学金和评优是不同事项，不能混为一谈。", "特殊体质学生应向辅导员、体育教师或学院测评负责老师确认课程成绩、体育活动认定和替代参与方式。", "网页不公开病情，也不承诺免测或保健体育一定影响或不影响某项评奖。"] },
+      { title: "结果和异议", items: ["非毕业班测评成果通常在当年8月31日前完成，毕业班通常在当年3月1日前完成；具体节点以学院通知为准。", "结果原则上在下一学年开学两周内公布。", "对分数或认定有疑问，先按学院规定期限向辅导员、班级评议组织或学院测评负责老师申请核对、更正或申诉。"] },
+      { title: "研究生说明", items: ["研究生使用本人的学院研究生综合素质测评实施细则。", "本科生体育/美育/劳育15%的比例不能直接套用到研究生。"] }
+    ], sourceIds: ["comprehensiveAssessment", "wikiAssessment"]
   });
 
   addService({
